@@ -50,3 +50,35 @@ ENDON
 ```
 
 With this rule, when the relay is automatically turned off after 1 second.
+
+## Home Assistant
+I created 2 scripts to open and close the garage door.
+- Open
+```
+sequence:
+  - condition: state
+    entity_id: binary_sensor.<garage door status>
+    state: "off"
+  - type: turn_on
+    device_id: <Porte de Garage>
+    entity_id: <Relais>
+    domain: switch
+alias: Porte de garage - Ouvrir
+description: ""
+
+```
+- Close
+```
+sequence:
+  - condition: state
+    entity_id: binary_sensor.<garage door status>
+    state: "on"
+  - type: turn_on
+    device_id: <Porte de Garage>
+    entity_id: <Relais>
+    domain: switch
+alias: Porte de garage - Fermer
+description: ""
+
+```
+The garage door open status is monitored via my house alarm.
