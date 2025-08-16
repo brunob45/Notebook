@@ -32,7 +32,7 @@ I configured the MQTT settings to communicate with Home Assistant
 - Host: `homeassistant.local` (or Home Assistant IP address)
 
 To activate the garage door, the circuit simply needs to short the terminals 3 & 4 together for a short period of time.
-I decided to use a [Tasmota rule](https://tasmota.github.io/docs/Rules/], which I implemented as
+I decided to use a [Tasmota rule](https://tasmota.github.io/docs/Rules/), which I implemented as
 ```
 ON Power1#State=1
 DO Backlog
