@@ -18,7 +18,7 @@ To control it over Home Assistant, I assembled a [Tasmota relay](https://tasmota
 - Cheap USB wall charger
 
 ## Setup
-After flashing `Tasmota (english)` on my Stamp-C3U, I configured the pins:
+After flashing `Tasmota (english)` on my Stamp-C3U, I configured the pins as:
 - GPIO2: WS2812
 - GPIO6: Relay
 - GPIO9: Button
