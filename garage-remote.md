@@ -82,3 +82,6 @@ description: ""
 
 ```
 The garage door open status is monitored via my house alarm.
+
+# Issues
+1. While trying to configure my Tasmota device, the light and relay entities disappeared. I had to reload the Tasmota integration in order to get them back. Reboots of the ESP32 or Home Assistant did not work.
